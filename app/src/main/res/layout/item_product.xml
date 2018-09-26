@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorIcons"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/oferta_icon"
+android:layout_margin="20dp"
+        android:background="@color/colorIcons"
+
+
+        />
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre"
+        android:layout_margin="16dp"
+        android:background="@color/colorIcons"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen"
+
+        />
+    <TextView
+        android:id="@+id/soles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S/."
+        android:layout_margin="8dp"
+        android:background="@color/colorIcons"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/precio"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        />
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="precio"
+        android:layout_margin="8dp"
+android:background="@color/colorIcons"
+        app:layout_constraintStart_toEndOf="@id/soles"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

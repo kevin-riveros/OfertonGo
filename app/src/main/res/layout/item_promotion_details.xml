@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.androidnetworking.widget.ANImageView
+
+        android:id="@+id/image_details"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/name_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre producto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_details"
+
+        />
+    <TextView
+
+        android:id="@+id/description_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="descripcion producto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_details"
+        />
+    <TextView
+        android:id="@+id/precio_details"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="precio producto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_details"
+        />
+    <TextView
+        android:id="@+id/bussineslink_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="businnes link"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/precio_details"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>
